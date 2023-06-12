@@ -1,12 +1,11 @@
 import './App.css'
+import LargeImageMap from "./LargeImage.tsx";
 
 function App() {
 
     return (
         <>
-
-            <h1>Vite + React</h1>
-
+            <LargeImageMap />
         </>
     )
 }
