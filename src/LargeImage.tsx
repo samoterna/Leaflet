@@ -8,7 +8,7 @@ const LargeImageMap: React.FC = () => {
     useEffect(() => {
         if (mapRef.current) {
             const map = new Map(mapRef.current, {crs: CRS.Simple});
-            const imageUrl = 'src/dortmund.svg';
+            const imageUrl = 'src/dortmund.png';
             const imageBounds: LatLngBoundsExpression = [[0, 0], [2000, 2000]];
             map.setMinZoom(-5)
 
