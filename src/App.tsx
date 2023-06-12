@@ -1,15 +1,15 @@
 import './App.css'
-import {LeafLetMap} from "./LeafLetMap.tsx";
 import 'leaflet/dist/leaflet.css';
-import LargeImageMap from "./LargeImage.tsx";
+import WithMapReference from "./LargeImage.tsx";
+import WithMapContainer from "./WithMapContainer.tsx";
 
 function App() {
 
     return (
         <>
-        <h1>React</h1>
-            <LargeImageMap />
-            <LeafLetMap/>
+            <h1>React</h1>
+            <WithMapReference/>
+            <WithMapContainer/>
         </>
 
     )

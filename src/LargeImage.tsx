@@ -1,8 +1,8 @@
-import React, {useEffect, useRef} from 'react';
+import {useEffect, useRef} from 'react';
 import {Map, ImageOverlay, LatLngBoundsExpression, CRS} from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-const LargeImageMap: React.FC = () => {
+const WithMapReference = () => {
     const mapRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
@@ -26,4 +26,4 @@ const LargeImageMap: React.FC = () => {
     return <div ref={mapRef} style={{width: '1000px', height: '700px'}}></div>;
 };
 
-export default LargeImageMap;
+export default WithMapReference;
